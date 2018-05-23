@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Library_AutoLayout">
+        <attr name="base_width">
+            <flag name="width" value="1" />
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+        </attr>
+
+        <!--library_auto_base_height-->
+        <attr name="base_height">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+            <flag name="minWidth" value="8192"/>
+            <flag name="maxWidth" value="16384"/>
+            <flag name="minHeight" value="32768"/>
+            <flag name="maxHeight" value="65536"/>
+        </attr>
+
+    </declare-styleable>
+
+
+    <!--library_auto_base_metroLayout-->
+    <declare-styleable name="Library_auto_base_metroLayout">
+        <attr name="metro_divider" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="Library_Auto_TabLayout">
+        <attr name="whether_text_size" format="boolean"/>
+    </declare-styleable>
+</resources>

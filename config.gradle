@@ -1,0 +1,95 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+def v_Junit = "4.12"
+def v_Test_runner = "1.0.2"
+def v_Espresso_core = "3.0.2"
+def v_Constraint_layout = "1.1.0"
+
+def v_Support = "27.1.1"
+def v_RecyclerViewAdapter = "2.9.25"
+
+def v_Dagger2 = "2.8"
+def v_Dagger2Annotation = "10.0-b28"
+
+def v_OkHttp3 = "3.8.0"
+def v_OkHttp3oKio = "1.13.0"
+
+def v_Retrofit2 = "2.3.0"
+
+def v_RxJava2 = "2.0.7"
+def v_RxAndroid = "2.0.1"
+def v_RxPermissions = "0.9.3@aar"
+def v_RxAdapter = "2.3.0"
+
+def v_ButterKnife = "8.8.1"
+
+def v_Glide = "3.8.0"
+def v_GlideOkHttp = "1.4.0@aar"
+def v_GlideTransformations = "1.2.1"
+
+def v_GSon = "2.8.0"
+
+def v_RouterApi = "1.2.4"
+def v_RouterCompiler = "1.1.4"
+
+ext {
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: v_Support,
+            applicationId    : "com.shop.dog",
+            minSdkVersion    : 16,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    dependencies = [
+            "junit"                : "junit:junit:${v_Junit}",
+            "test-runner"          : "com.android.support.test:runner:${v_Test_runner}",
+            "espresso-core"        : "com.android.support.test.espresso:espresso-core:${v_Espresso_core}",
+            "constraint_layout"    : "com.android.support.constraint:constraint-layout:${v_Constraint_layout}",
+
+            "appcompat-v7"         : "com.android.support:appcompat-v7:${v_Support}",
+            "recyclerview-v7"      : "com.android.support:recyclerview-v7:${v_Support}",
+            "cardview-v7"          : "com.android.support:cardview-v7:${v_Support}",
+            "design"               : "com.android.support:design:${v_Support}",
+
+            //recyclerView-Adapter
+            "recyclerViewAdapter"  : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${v_RecyclerViewAdapter}",
+
+            //dagger 的依赖
+            "dagger2"              : "com.google.dagger:dagger:${v_Dagger2}",
+            "dagger2-compiler"     : "com.google.dagger:dagger-compiler:${v_Dagger2}",
+            "dagger2-annotation"   : "org.glassfish:javax.annotation:${v_Dagger2Annotation}",
+
+            //okHttp 的依赖
+            "okhttp3"              : "com.squareup.okhttp3:okhttp:${v_OkHttp3}",
+            "okhttp3-okio"         : "com.squareup.okio:okio:${v_OkHttp3oKio}", "okhttp3-logging": "com.squareup.okhttp3:logging-interceptor:${v_OkHttp3}",
+
+            //retrofit 的依赖
+            "retrofit2"            : "com.squareup.retrofit2:retrofit:${v_Retrofit2}",
+            "retrofit2-gson"       : "com.squareup.retrofit2:converter-gson:${v_Retrofit2}",
+
+            //rxJava2 的依赖
+            "rxjava2"              : "io.reactivex.rxjava2:rxjava:${v_RxJava2}",
+            "rxjava2-rxandroid"    : "io.reactivex.rxjava2:rxandroid:${v_RxAndroid}",
+            "rxjava2-rxpermissions": "com.tbruyelle.rxpermissions2:rxpermissions:${v_RxPermissions}",
+            "rxjava2-adapter"      : "com.squareup.retrofit2:adapter-rxjava2:${v_RxAdapter}",
+
+            //butterKnife
+            "butterknife"          : "com.jakewharton:butterknife:${v_ButterKnife}",
+            "butterknife-compiler" : "com.jakewharton:butterknife-compiler:${v_ButterKnife}",
+
+            //glide
+            "glide"                : "com.github.bumptech.glide:glide:${v_Glide}",
+            "glide-okhttp3"        : "com.github.bumptech.glide:okhttp3-integration:${v_GlideOkHttp}",
+            "glide-transformations": "jp.wasabeef:glide-transformations:${v_GlideTransformations}",
+
+            //GSon
+            "gson"                 : "com.google.code.gson:gson:${v_GSon}",
+
+            //router
+            "aRouter-api"           : "com.alibaba:arouter-api:${v_RouterApi}",
+            "aRouter-compiler"      : "com.alibaba:arouter-compiler:${v_RouterCompiler}"
+    ]
+}
+

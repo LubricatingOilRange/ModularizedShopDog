@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.module.home">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+
+        <!-- 登录页面 -->
+        <activity android:name=".LoginActivity" />
+        <!--主页面-->
+        <activity android:name=".MainActivity"/>
+    </application>
+
+</manifest>

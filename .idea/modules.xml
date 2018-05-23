@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LibraryADepend/LibraryADepend.iml" filepath="$PROJECT_DIR$/LibraryADepend/LibraryADepend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibraryBCore/LibraryBCore.iml" filepath="$PROJECT_DIR$/LibraryBCore/LibraryBCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibraryCommon/LibraryCommon.iml" filepath="$PROJECT_DIR$/LibraryCommon/LibraryCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ModularizedShopDog.iml" filepath="$PROJECT_DIR$/ModularizedShopDog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ModuleAHome/ModuleAHome.iml" filepath="$PROJECT_DIR$/ModuleAHome/ModuleAHome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

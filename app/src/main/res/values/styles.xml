@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--启动页面的样式设置-->
+    <style name="LauncherTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--键盘的设置-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/ic_app_launcher</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--autoLayout-->
+    <item type="id" name="library_tag_auto_size"/>
+    <item type="id" name="library_tag_auto_padding"/>
+    <item type="id" name="library_tag_auto_margin"/>
+
+    <!--statusBar-->
+    <item type="id" name="library_statusBar_fake_view" />
+    <item type="id" name="library_statusBar_translucent_view" />
+</resources>

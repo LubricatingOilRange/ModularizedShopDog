@@ -1,0 +1,1 @@
+include ':app', ':ModuleAHome', ':LibraryADepend', ':LibraryBCore', ':LibraryCommon'
