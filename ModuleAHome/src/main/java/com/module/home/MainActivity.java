@@ -15,13 +15,13 @@ import com.library.core.util.SPUtil;
 public class MainActivity extends AppCompatActivity {
 
     @Autowired(name = SPUtil.SP_USER_COMMAND)
-    UserCommand userCommand;    // 支持解析自定义对象，URL中使用json传递
+    UserCommand userCommand;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ARouter.getInstance().inject(this);
+        ARouter.getInstance().inject(this);//ARouter注入
         TextView tv_login = findViewById(R.id.tv_login);
         tv_login.setText(userCommand.getStoreName());
     }
