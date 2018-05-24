@@ -1,6 +1,7 @@
 package com.module.home;
 
 import android.view.View;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -17,9 +18,13 @@ import com.library.core.util.SPUtil;
 
 import java.util.Map;
 
+import butterknife.BindView;
+
 @Route(path = ARouterConstant.ROUTER_HOME_LOGIN)
 public class LoginActivity extends BaseInputActivity {
 
+    @BindView(R2.id.tv_login)
+    TextView tv_login;
     @Override
     protected int getLayoutId() {
         return R.layout.activity_login;
@@ -27,7 +32,7 @@ public class LoginActivity extends BaseInputActivity {
 
     @Override
     protected void onCreateInit() {
-        findViewById(R.id.tv_login).setOnClickListener(new View.OnClickListener() {
+        tv_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 LoadingDialog loadingDialog = new LoadingDialog(LoginActivity.this);
@@ -52,7 +57,7 @@ public class LoginActivity extends BaseInputActivity {
                                 LogUtil.d("onNext");
                                 SPUtil.putObject(LoginActivity.this, SPUtil.SP_USER_COMMAND, userCommand);
                                 ARouter.getInstance()
-                                        .build(com.library.common.module.router.ARouterConstant.ROUTER_HOME_MAIN)//主页面路由
+                                        .build(ARouterConstant.ROUTER_HOME_MAIN)//主页面路由
                                         .withParcelable(SPUtil.SP_USER_COMMAND, userCommand)
                                         .navigation();
                             }
